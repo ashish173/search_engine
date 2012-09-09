@@ -1,5 +1,7 @@
-#Finishing the page ranking algorithm.
+#!usr/bin/python
 
+
+# computing the page rank
 def compute_ranks(graph):
     d = 0.8 # damping factor
     numloops = 10
@@ -21,7 +23,7 @@ def compute_ranks(graph):
     return ranks
 
 
-
+# test pages in the dict
 cache = {
    'http://udacity.com/cs101x/urank/index.html': """<html>
 <body>
@@ -234,6 +236,8 @@ def main():
         
 if __name__ == "__main__":
     main()
+
+# expected outputs...
     
 #>>> {'http://udacity.com/cs101x/urank/kathleen.html': 0.11661866666666663,
 #'http://udacity.com/cs101x/urank/zinc.html': 0.038666666666666655,
